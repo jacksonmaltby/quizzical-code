@@ -1,0 +1,46 @@
+:root {
+    --main-bg-color: #1b1b1b;
+    --secondary-bg-color: #2c2c2c;
+    --highlight-color: #8b00ff;
+    --text-color: #fff;
+}
+
+* {
+    margin: 1em 0;
+    padding: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+body {
+    background-color: #2C3E50;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+    transform: scale(1.1);
+}
+
+.start-quiz-button {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1em;
+}

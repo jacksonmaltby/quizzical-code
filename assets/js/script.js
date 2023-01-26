@@ -111,7 +111,8 @@ function showResults() {
     let name = prompt("Enter your name:");
     localStorage.setItem(name, score);
     clearInterval(intervalId);
-    showHighScores();
+    document.getElementById("timer").style.display = "none";
+    displayHighScores();
 }
 
 function saveHighScore() {
@@ -142,7 +143,7 @@ function displayHighScores() {
 
 let highScores = document.getElementById("high-scores");
 for (let i = 0; i < 3; i++) {
-    let score = scores[i];
+    let score = score[i];
     let p = document.createElement("p");
     p.innerHTML = `${score.name} : ${score.value}`;
     highScores.appendChild(p);
